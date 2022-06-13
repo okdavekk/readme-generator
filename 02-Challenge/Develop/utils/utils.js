@@ -1,19 +1,19 @@
-const fs = require('fs');
+// const fs = require('fs');
 
-const writeToFile = (filename, data) => {
-  fs.writeFile(filename, JSON.stringify(data, null, 2), (err) => {
-    if (err) console.log(err);
-  });
-};
+// const writeToFile = (filename, data) => {
+//   fs.writeFile(filename, JSON.stringify(data, null, 2), (err) => {
+//     if (err) console.log(err);
+//   });
+// };
 
-const readFromFile = (filename) => {
-  return fs.readFileSync(filename, 'utf8');
-};
+// const readFromFile = (filename) => {
+//   return fs.readFileSync(filename, 'utf8');
+// };
 
-module.exports = {
-  writeToFile,
-  readFromFile
-};
+// module.exports = {
+//   writeToFile,
+//   readFromFile
+// };
 
 
 
