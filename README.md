@@ -57,8 +57,10 @@ GIVEN a command-line application that accepts user input WHEN I am prompted for 
 
 ## Visuals
 
+### Command Line:
 ![Command Line Still](./Media/command-line-example.png)
 
+### Walkthrough
 
 ## Authors and Acknoledgement
 Made by myself, David Kemp with help from many others.
