@@ -1,6 +1,6 @@
     
     
-# t
+# Project Title
 
 ## Table of Contents
 
@@ -14,23 +14,23 @@
 
 ## Description 
 
-t
+This is the best project ever
 
 ## Installation 
 
-t
+Install how you want
 
 ## Usage 
 
-t
+Use how you want
 
 ## Contributing 
 
-t
+Contribute how you see fit
 
 ## Tests 
 
-t  
+Test frequently  
 
 ## License
 
