@@ -1,130 +1,48 @@
-// // TODO: Include packages needed for this application
-
-// // TODO: Create an array of questions for user input
-// const questions = [];
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
-
+/***************************************************************************************
+ * I did my best to make it mine but in the event that this comes back, I would like to thank the below for getting me started in the right direction.
+* 
+*    Title: readme-generator
+*    Author: connietran-dev
+*    Date: 13 Jun 22
+*    Code version: commit 9112996 (could not get version)
+*    Availability: https://github.com/connietran-dev/readme-generator
+*
+***************************************************************************************/
 
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { inherits } = require('util');
+const util = require('util');
+const questions = require('./questions.js');
 
-inquirer
-    .prompt([
-        {
-            type: 'input',
-            name: 'title',
-            message: 'What is the title of your project?',
-        },
-
-        {
-            type: 'input',
-            name: 'description',
-            message: 'Enter a desciption of the project',
-        },
+const generateReadMe = require('./utils/generateReadMe.js');
 
 
-        {
-            type: 'input',
-            name: 'installation',
-            message: 'Enter the installation instructions',
-        },
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            return console.log(err);
+        }
 
-        {
-            type: 'input',
-            name: 'usage',
-            message: 'Enter usage information',
-        },
-
-        {
-            type: 'input',
-            name: 'contributing',
-            message: 'Enter contribution guidelines',
-          },
-
-          {
-            type: 'input',
-            name: 'test',
-            message: 'Enter test instructions',
-          },
-
-
-        // {
-        //     type: 'checkbox',
-        //     name: 'stack',
-        //     message: 'What languages do you know?',
-        //     choices: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
-        // },
-        // {
-        //     type: 'list',
-        //     name: 'contact',
-        //     message: 'What is your preferred method of communication?',
-        //     choices: ['email', 'phone', 'telekinesis'],
-        // },
-    ])
-    .then((data) => {
-        const filename = `${data.title.toLowerCase().split(' ').join('')}.json`;
-
-        fs.writeFile(filename, JSON.stringify(data, null, 2), (err) =>
-            err ? console.log(err) : console.log('Success!')
-        );
-
-        console.log(data)
     });
+}
 
-// //   init()
+const writeFileAsync = util.promisify(writeToFile);
 
 
+// Main function
+async function init() {
+    try {
 
+        const userInputs = await inquirer.prompt(questions);
 
-// const { prompt } = require('inquirer');
-// const utils = require('./utils/utils');
-// const questions = require('./questions.js');
+        const readIt = generateReadMe(userInputs);
 
-// const init = async () => {
-//   let result;
-//   const data = await prompt(questions);
-//   if (data.contact === "phone" || data.contact === "email") {
-//     const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
+        await writeFileAsync('generatedREADME.md', readIt);
 
-//     const information = JSON.parse(utils.readFromFile(filename)) || [];
+    } catch (error) {
+        console.log(error);
+    }
+};
 
-//     information.push(data);
-
-//     utils.writeToFile(filename, information);
-
-//     const { confirm } = await prompt([
-//       {
-//         type: 'confirm',
-//         message: 'Would you like to enter your contact info?',
-//         name: 'confirm'
-//       }
-//     ]);
-
-//     if (!confirm) process.exit();
-
-//     result = await prompt([
-//       {
-//         type: 'input',
-//         name: data.contact,
-//         message: `What is your ${data.contact}`
-//       }
-//     ]);
-
-//     if (result) {
-//       information[information.length - 1] = { ...data, ...result };
-//       utils.writeToFile(filename, information);
-//     }
-//   }
-// };
-
-// init();
+init();
