@@ -1,5 +1,5 @@
 
-# Big ol Title
+# q
 
 ## Table of Contents
 
@@ -13,23 +13,23 @@
 
 ## Description 
 
-Once upon a time
+q
 
 ## Installation 
 
-Install at own risk
+q
 
 ## Usage 
 
-Use how you want
+q
 
 ## Contributing 
 
-Go ahead and email me contribution
+q
 
 ## Tests 
 
-Test easily how you want  
+q  
 
 ## License
 
@@ -37,7 +37,7 @@ Apache License 2.0
 
 ## Questions?
 
-### Github: [okdavekk@gmail.com](https://github.com/okdavekk@gmail.com)
+### Github: [okdavekk](https://github.com/okdavekk)
 
 ### Reach Me Via Email: okdavekk@gmail.com
 

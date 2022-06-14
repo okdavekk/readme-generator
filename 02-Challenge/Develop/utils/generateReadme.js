@@ -1,6 +1,6 @@
 const generateReadMe = (userInputs, element) => {
 
-    let readMeBuilder = `
+    let readMeBuildABear = `
 # ${userInputs.title}
 
 ## Table of Contents
@@ -43,10 +43,9 @@ ${userInputs.license}
 
 ### Reach Me Via Email: ${userInputs.email}
 
-
 `
 
-    return readMeBuilder;
+    return readMeBuildABear;
 }
 
 module.exports = generateReadMe;

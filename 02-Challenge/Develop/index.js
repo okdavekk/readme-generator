@@ -11,9 +11,10 @@
 
 
 const inquirer = require('inquirer');
+const questions = require('./questions.js');
+
 const fs = require('fs');
 const util = require('util');
-const questions = require('./questions.js');
 
 const generateReadMe = require('./utils/generateReadMe.js');
 

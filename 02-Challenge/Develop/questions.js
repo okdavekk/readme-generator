@@ -37,19 +37,16 @@ module.exports = [
         message: "Choose a License",
         choices: ['Apache License 2.0', 'MIT License'],
     },
-
     {
         type: 'input',
         name: 'github',
-        message: "Enter Your Github Username?",
+        message: "Enter Your Github Username",
 
     },
-
     {
         type: 'input',
         name: 'email',
         message: "Enter Your Email Address",
 
     },
-
 ];
