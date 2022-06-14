@@ -1,6 +1,22 @@
 const generateReadMe = (userInputs, element) => {
 
-    let readMeBuildABear = `
+    let readMeBuildABear = 
+
+//    function (userInputs) {
+//         let Apache = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+//         let MIT = "[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+//         if (userInputs.license === "Apache License 2.0") {
+//             return (Apache)
+//         } else if (userInputs.license=== "MIT License") {
+//             return (MIT)
+//         };
+//         return true;
+
+//     }
+
+
+`    
+    
 # ${userInputs.title}
 
 ## Table of Contents
@@ -36,6 +52,7 @@ ${userInputs.tests}
 ## License
 
 ${userInputs.license}
+
 
 ## Questions?
 

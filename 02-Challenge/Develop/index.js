@@ -19,7 +19,7 @@ const util = require('util');
 const generateReadMe = require('./utils/generateReadMe.js');
 
 
-function writeToFile(fileName, data) {
+const writeToFile = (fileName, data) => {
     fs.writeFile(fileName, data, err => {
         if (err) {
             return console.log(err);
@@ -45,5 +45,6 @@ async function init() {
         console.log(error);
     }
 };
+
 
 init();
