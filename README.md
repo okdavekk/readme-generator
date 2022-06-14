@@ -60,7 +60,7 @@ GIVEN a command-line application that accepts user input WHEN I am prompted for 
 ### Command Line:
 ![Command Line Still](./02-Challenge/Develop/Media/command-line-example.png)
 
-### Walkthrough
+### Walkthrough:
 ![Screencastify](./02-Challenge/Develop/Media/demo.gif)
 
 
