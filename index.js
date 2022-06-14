@@ -16,7 +16,7 @@ const questions = require('./questions.js');
 const fs = require('fs');
 const util = require('util');
 
-const generateReadMe = require('./utils/generateReadMe.js');
+const generateReadMe = require('generateReadMe.js');
 
 
 const writeToFile = (fileName, data) => {
