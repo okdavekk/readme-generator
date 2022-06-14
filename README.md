@@ -55,3 +55,10 @@ GIVEN a command-line application that accepts user input WHEN I am prompted for 
 
 - WHEN I click on the links in the Table of Contents THEN I am taken to the corresponding section of the README
 
+## Visuals
+
+![Command Line Still](./Media/command-line-example.png)
+
+
+## Authors and Acknoledgement
+Made by myself, David Kemp with help from many others.
