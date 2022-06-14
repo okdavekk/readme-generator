@@ -58,9 +58,11 @@ GIVEN a command-line application that accepts user input WHEN I am prompted for 
 ## Visuals
 
 ### Command Line:
-![Command Line Still](./Media/command-line-example.png)
+![Command Line Still](./02-Challenge/Develop/Media/command-line-example.png)
 
 ### Walkthrough
+![Screencastify](./02-Challenge/Develop/Media/demo.gif)
+
 
 ## Authors and Acknoledgement
 Made by myself, David Kemp with help from many others.
