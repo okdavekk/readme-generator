@@ -1,6 +1,6 @@
     
     
-# Title of New Project
+# t
 
 ## Table of Contents
 
@@ -14,27 +14,27 @@
 
 ## Description 
 
-This is the best project ever
+t
 
 ## Installation 
 
-Install how you want
+t
 
 ## Usage 
 
-Use however you see fit
+t
 
 ## Contributing 
 
-Contribute frequently and as much as you want
+t
 
 ## Tests 
 
-Test a ton  
+t  
 
 ## License
 
-MIT License
+Apache License 2.0
 
 
 ## Questions?

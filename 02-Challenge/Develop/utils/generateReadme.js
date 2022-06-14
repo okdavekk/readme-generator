@@ -1,8 +1,3 @@
-// const fs = require('fs');
-
-
-
-
 const generateReadMe = (userInputs, element) => {
 
     let readMeBuildABear = 
