@@ -1,6 +1,11 @@
     
     
-# t
+# README Generator
+
+        
+![License](https://img.shields.io/badge/license-GPL-grey)
+
+
 
 ## Table of Contents
 
@@ -14,27 +19,27 @@
 
 ## Description 
 
-t
+Description entered
 
 ## Installation 
 
-t
+Install how you wish
 
 ## Usage 
 
-t
+Use how you want
 
 ## Contributing 
 
-t
+Contribute how you see fit
 
 ## Tests 
 
-t  
+Test frequently  
 
 ## License
 
-Apache License 2.0
+GPL
 
 
 ## Questions?

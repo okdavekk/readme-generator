@@ -32,10 +32,17 @@ module.exports = [
         message: "Enter Test Instructions",
     },
     {
-        type: 'list',
+        type: 'rawlist',
         name: 'license',
         message: "Choose a License",
-        choices: ['Apache License 2.0', 'MIT License'],
+        choices: [
+            "MPL",
+            "GPL",
+            "Apache",
+            "MIT",
+            "CC",
+            "BSD",
+        ]
     },
     {
         type: 'input',
