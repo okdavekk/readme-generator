@@ -18,20 +18,20 @@ const util = require('util');
 
 const generateReadMe = require('./utils/generateReadMe.js');
 
-
 const writeToFile = (fileName, data) => {
+//This structure came from the author above
     fs.writeFile(fileName, data, err => {
         if (err) {
             return console.log(err);
         }
-
     });
 }
 
+//This also came from the author above
 const writeFileAsync = util.promisify(writeToFile);
 
 
-// Main function
+// Main function came from author above but I refactored the functions, arguments, and renamed the const's
 async function init() {
     try {
 

@@ -3,7 +3,7 @@
 # README Generator
 
         
-![License](https://img.shields.io/badge/license-GPL-grey)
+![License](https://img.shields.io/badge/license-MPL-red)
 
 
 
@@ -19,19 +19,19 @@
 
 ## Description 
 
-Description entered
+Decription has been stated
 
 ## Installation 
 
-Install how you wish
+Install how you want
 
 ## Usage 
 
-Use how you want
+Use how you see fit
 
 ## Contributing 
 
-Contribute how you see fit
+Contribute frequently
 
 ## Tests 
 
@@ -39,12 +39,12 @@ Test frequently
 
 ## License
 
-GPL
+MPL
 
 
 ## Questions?
 
-### Github: [okdavekk](https://github.com/okdavekk)
+### Github: [nonamerepo](https://github.com/nonamerepo)
 
-### Reach Me Via Email: okdavekk@gmail.com
+### Reach Me Via Email: email@email.com
 
